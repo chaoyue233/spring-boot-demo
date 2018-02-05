@@ -1,0 +1,16 @@
+server:
+  port: 8081
+
+security:
+  user:
+    name: admin
+    password: admin
+
+management:
+  security:
+    enabled: true
+    roles: ADMIN
+
+info:
+  app:
+    name: chaoyue's first boot app

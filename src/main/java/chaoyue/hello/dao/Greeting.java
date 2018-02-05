@@ -1,4 +1,4 @@
-package chaoyue.hello;
+package chaoyue.hello.dao;
 
 public class Greeting {
   private long id = 2L;

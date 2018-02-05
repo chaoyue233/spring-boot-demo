@@ -1,6 +1,6 @@
-server:
-  port: 8081
-
 people:
-  name: chaoyue
-  age: 18
+  name: ${random.value}
+  age: ${random.int[10,80]}
+spring:
+  profiles:
+    active: test
