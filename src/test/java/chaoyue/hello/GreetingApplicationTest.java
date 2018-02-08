@@ -1,6 +1,7 @@
 package chaoyue.hello;
 
 import chaoyue.hello.controller.GreetingController;
+import chaoyue.hello.dao.Region;
 import chaoyue.hello.service.ITest;
 import org.junit.Before;
 import org.junit.Test;
@@ -13,6 +14,9 @@ import org.springframework.test.context.web.WebAppConfiguration;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
+import com.alibaba.fastjson.JSON;
+
+import java.util.List;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringBootTest(classes = GreetingApplication.class)
@@ -36,5 +40,11 @@ public class GreetingApplicationTest {
   @Test
   public void selfTest() {
     iTest.f();
+  }
+
+  @Test
+  public void getAllRegionTest() {
+    List<Region> result = iTest.getAllRegion();
+    System.out.println(JSON.toJSONString(result));
   }
 }

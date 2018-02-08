@@ -7,6 +7,12 @@ spring:
   profiles:
     active: test
 
+  datasource:
+    url: jdbc:mysql://weimob-db-public.internal.weimob.com:3306/mj_ads?useUnicode=true&amp;characterEncoding=utf-8&amp;autoReconnect=true
+    username: mengju_dev01
+    password: P@ssw0rd_mJ01s_wDeV
+    driver-class-name: com.mysql.jdbc.Driver
+
 # eureka配置
 eureka:
   client:
@@ -14,3 +20,8 @@ eureka:
     fetch-registry: false
     serviceUrl:
       defaultZone: http://localhost:9090/eureka/
+
+# mybatis 配置
+mybatis:
+  typeAliasesPackage: chaoyue.hello.dao.mapper
+  mapperLocations: classpath:mapper/*.xml
