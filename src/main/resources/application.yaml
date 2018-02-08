@@ -8,9 +8,9 @@ spring:
     active: test
 
   datasource:
-    url: jdbc:mysql://weimob-db-public.internal.weimob.com:3306/mj_ads?useUnicode=true&amp;characterEncoding=utf-8&amp;autoReconnect=true
-    username: mengju_dev01
-    password: P@ssw0rd_mJ01s_wDeV
+    url: xxxx
+    username: name
+    password: pws
     driver-class-name: com.mysql.jdbc.Driver
 
 # eureka配置
